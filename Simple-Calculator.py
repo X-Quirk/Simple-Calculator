@@ -83,10 +83,11 @@ def btn_div_click(): # Defining a function to show what happens when / is clicke
 def last_character_delete(): # Defining a function to eliminate the last character 
                              # if the last character happens to be +,-,*or /
     global var
-    length = len(var); # Taking the length of the var variable, so as to find the last index of var
-    if(var[length-1] == "+" or var[length-1] == "-" or var[length-1] == "*" or var[length-1] == "/"):
-        var = var[:-1] # Removing the last character
-        last_character_delete() # Recursive call till last character is not +,-,*or/
+    if var != "": # No need to check the remaining if it's a empty string
+        length = len(var); # Taking the length of the var variable, so as to find the last index of var
+        if(var[length-1] == "+" or var[length-1] == "-" or var[length-1] == "*" or var[length-1] == "/"):
+            var = var[:-1] # Removing the last character
+            last_character_delete() # Recursive call till last character is not +,-,*or/
 
 def result(): # Defining a function to evaluate the result
     global var
@@ -104,23 +105,25 @@ def result(): # Defining a function to evaluate the result
     if(temp != "Infinity"): # Evaluation only takes place if division by 0 does not occur
                             # if it occurs, the value in var will be "Infinity" and evaluating
                             # "Infinity" will raise a error
-        temp = eval(temp) # Function evaluate the result 
+        if  (temp != ""): # Also eval function will raise a error if a empty string is passed on to it
+            temp = eval(temp) # Function evaluate the result 
                           # This fubctiob coverts the String input to the neccessary data types and 
                           #evaluates them, it makes things way easier!
-        if (type(temp) == float): # To round off the number 
-            temp = round(temp,4) # Rounding off upto 4 decimal places
-            temp = str(temp)
-            if len(temp.split(".", 1)[1]) == 1: # Making sure .0 doesn't come
-                if(temp.split(".", 1)[1] == 0):  # eg. To make 8.0 as 8 
-                    temp = float(temp)           
-                    temp = int(temp)  # Makes the .0 disappears as it converts float to int      
-        var = str(temp)  # Converting temp back to string as data variable can only display strings     
+            if (type(temp) == float): # To round off the number 
+                temp = round(temp,4) # Rounding off upto 4 decimal places
+                temp = str(temp)
+                if len(temp.split(".", 1)[1]) == 1: # Making sure .0 doesn't come
+                    if(temp.split(".", 1)[1] == 0):  # eg. To make 8.0 as 8 
+                        temp = float(temp)           
+                        temp = int(temp)  # Makes the .0 disappears as it converts float to int      
+            var = str(temp)  # Converting temp back to string as data variable can only display strings     
     
     data.set(var)
     if (temp == "Infinity"):
-        var = "" # Resetting the result to empty string if Infinity appears
-                 # Else remaining calculation is going to be carried out with "Infinity"
-                 # which might raise error.
+        var = ""  # Resetting the result to empty string if Infinity appears
+                      # Else remaining calculation is going to be carried out with "Infinity"
+                      # which might raise error.
+        
      
 
 my_calculator = Tk() # Creating a window
