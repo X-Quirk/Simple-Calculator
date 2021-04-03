@@ -11,10 +11,11 @@ The Tkinter library is used to provide a GUI (Graphical User Interface) for the 
 5. If you want to view or edit the code, open it in a text editor or the appropriate software.
 6. All the logic i used is explained as comments in the script/code
 7. To edit the script, open it in a text editor and make the changes neccesary and save it.
-8. 
+
+
 # Note
-You need to have the Python3 Interpretor installed to run the script.
-If you want to, you can download the Python3 Interpretor from [a link](https://www.python.org/downloads/) 
+You need to have the Python3 Interpretor installed to run the script. <br/>
+If you want to, you can download the Python3 Interpretor from [https://www.python.org/downloads/](https://www.python.org/downloads/) <br/>
 You needn't download the Tkinter library. It's already pre-installed during the Python3 installation.
 
 #
