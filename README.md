@@ -15,7 +15,7 @@ The Tkinter library is used to provide a GUI (Graphical User Interface) for the 
 
 # Note
 You need to have the Python3 Interpreter installed to run the script. <br/>
-If you want to, you can download the Python3 Interpreter from [https://www.python.org/downloads/](https://www.python.org/downloads/) <br/>
+If you want to, you can download the Python3 Interpreter from [here](https://www.python.org/downloads/).<br/>
 You needn't download the Tkinter library. It's already pre-installed during the Python3 installation.
 
 #
