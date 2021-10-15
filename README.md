@@ -1,5 +1,5 @@
 # Simple-Calculator
-This a simple calculator created using Python3 and tkinter library. It performs all the basic arthimetic functions of a calculator such as addition, subtraction, division and multiplication.
+This a simple calculator created using `Python3` and `tkinter` library. It performs all the basic arthimetic functions of a calculator such as addition, subtraction, division and multiplication.
 The Tkinter library is used to provide a GUI (Graphical User Interface) for the calculator. 
 
 
@@ -15,8 +15,8 @@ The Tkinter library is used to provide a GUI (Graphical User Interface) for the 
 
 # Note
 You need to have the Python3 Interpreter installed to run the script. <br/>
-If you want to, you can download the Python3 Interpreter from [here](https://www.python.org/downloads/).<br/>
-You needn't download the Tkinter library. It's already pre-installed during the Python3 installation.
+If you want to, you can download the `Python3 Interpreter` from [`here`](https://www.python.org/downloads/).<br/>
+You needn't download the Tkinter library. It's already pre-installed during the deafult Python3 installation.
 
 #
 Feel free to change the Code according to your needs
